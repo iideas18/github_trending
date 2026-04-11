@@ -65,6 +65,10 @@ a:hover {
   padding: 2.5rem 1.5rem;
 }
 
+.container:has(.report-layout) {
+  max-width: 1160px;
+}
+
 /* Hero / Header */
 .header {
   text-align: center;
@@ -436,6 +440,100 @@ a:hover {
   margin-top: 0.5rem;
 }
 
+/* Report layout with sidebar */
+.report-layout {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  position: relative;
+}
+
+.report-main {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Sidebar TOC */
+.sidebar-toc {
+  position: sticky;
+  top: 1.5rem;
+  width: 220px;
+  flex-shrink: 0;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1rem;
+  max-height: calc(100vh - 3rem);
+  overflow-y: auto;
+}
+
+.sidebar-toc::-webkit-scrollbar {
+  width: 4px;
+}
+
+.sidebar-toc::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.sidebar-toc::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 4px;
+}
+
+.sidebar-toc .toc-title {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.sidebar-toc .toc-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.sidebar-toc .toc-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.5rem;
+  border-radius: 6px;
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: all 0.2s ease;
+  line-height: 1.3;
+  word-break: break-word;
+}
+
+.sidebar-toc .toc-item:hover {
+  background: var(--accent-glow);
+  color: var(--accent);
+}
+
+.sidebar-toc .toc-item.active {
+  background: var(--accent-glow);
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.sidebar-toc .toc-rank {
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  min-width: 1.4rem;
+  flex-shrink: 0;
+}
+
+.sidebar-toc .toc-item.active .toc-rank {
+  color: var(--accent);
+}
+
 /* Scroll to top */
 .scroll-top {
   position: fixed;
@@ -510,6 +608,14 @@ a:hover {
 
   .project-card .repo-name {
     font-size: 1.05rem;
+  }
+
+  .sidebar-toc {
+    display: none;
+  }
+
+  .report-layout {
+    display: block;
   }
 }
 
