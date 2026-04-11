@@ -11,5 +11,5 @@ cd "$SCRIPT_DIR"
 PROMPT=$(cat prompt.md)
 
 echo "[$(date '+%Y-%m-%d %H:%M:%S')] Starting GitHub Trending report generation..."
-copilot -p "$PROMPT"
+copilot -p "$PROMPT" --allow-all --autopilot
 echo "[$(date '+%Y-%m-%d %H:%M:%S')] Done."
