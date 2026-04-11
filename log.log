@@ -119,3 +119,25 @@ Now let me commit and push:
 
 The files are updated. Let me re-add and commit:
 
+● Re-stage all files (shell)
+  │ cd /mnt/disk1/zy/github_trend && git add -A && git --no-pager diff --cached --name-only
+  └ 4 lines...
+
+● Check HEAD versions of files (shell)
+  │ cd /mnt/disk1/zy/github_trend && git --no-pager show HEAD:index.html | head -20 && echo "===" &&
+  │ git --no-pager show HEAD:data/seen_repos.json | head -5
+  └ 27 lines...
+
+The index.html and seen_repos.json already had today's data from a prior run. The report file is being updated with my improved content. Let me commit:
+
+● Git commit (shell)
+  │ cd /mnt/disk1/zy/github_trend && git commit -m "📊 Daily trending report 2026-04-11
+  │
+  │ Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>"
+  └ 4 lines...
+
+● Git push (shell)
+  │ cd /mnt/disk1/zy/github_trend && git push origin main 2>&1
+  └ 10 lines...
+
+[2026-04-11 15:30:17] Done.

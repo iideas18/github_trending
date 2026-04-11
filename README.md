@@ -22,7 +22,7 @@
    ```bash
    crontab -e
    # Add this line:
-   0 8 * * * /mnt/disk1/zy/github_trend/run.sh >> /mnt/disk1/zy/github_trend/cron.log 2>&1
+   0 8 * * * /mnt/disk1/zy/github_trend/run.sh >> /mnt/disk1/zy/github_trend/log.log 2>&1
    ```
 5. Enable GitHub Pages in repo settings (deploy from `main` branch via Actions)
 
