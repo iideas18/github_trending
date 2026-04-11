@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub Trending Report — 2026-04-11</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="container">
+    <a href="../index.html" class="back-link">← Back to all reports</a>
+    <div class="header">
+      <h1>GitHub Trending Report</h1>
+      <p class="date">2026-04-11</p>
+      <p class="subtitle">12 new projects discovered</p>
+    </div>
+
+    <div class="project-card">
+      <div class="card-header">
+        <span class="repo-name"><a href="https://github.com/microsoft/markitdown">microsoft/markitdown</a></span>
+        <div class="stats">
+          <span class="star-count">⭐ 2,352 stars today</span>
+        </div>
+      </div>
+      <div class="language">
+        <span class="lang-dot" style="background: #3572A5;"></span> Python
+      </div>
+      <div class="description">Python tool for converting files and office documents to Markdown.</div>
+      <div class="introduction">
+        <p>MarkItDown is a lightweight Python utility developed by Microsoft's AutoGen team that converts a wide range of file formats into Markdown. It supports PDFs, Word documents, PowerPoint presentations, Excel spreadsheets, images (via OCR), audio files (via speech transcription), HTML, CSV, JSON, XML, ZIP archives, YouTube URLs, EPubs, and more. The tool focuses on preserving important document structure — headings, lists, tables, and links — making the output ideal for consumption by LLMs and text analysis pipelines.</p>
+        <p>What makes MarkItDown particularly useful is its integration with the AI ecosystem. It now offers an MCP (Model Context Protocol) server for seamless integration with LLM applications like Claude Desktop. Dependencies are organized into optional feature-groups, so you can install only what you need. The tool is available both as a Python library and a CLI, making it versatile for scripting and automation workflows.</p>
+        <p>MarkItDown is trending because of the growing need to feed structured content to AI models. As LLMs become central to document analysis, having a reliable converter that preserves document semantics in Markdown — the format closest to plain text while retaining structure — is invaluable for developers building RAG pipelines, document processing systems, and AI-powered workflows.</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="card-header">
+        <span class="repo-name"><a href="https://github.com/coleam00/Archon">coleam00/Archon</a></span>
+        <div class="stats">
+          <span class="star-count">⭐ 756 stars today</span>
+        </div>
+      </div>
+      <div class="language">
+        <span class="lang-dot" style="background: #3178c6;"></span> TypeScript
+      </div>
+      <div class="description">The first open-source harness builder for AI coding. Make AI coding deterministic and repeatable.</div>
+      <div class="introduction">
+        <p>Archon is a workflow engine for AI coding agents that brings determinism and repeatability to AI-assisted software development. When you ask an AI agent to "fix this bug," the outcome typically varies run-to-run — it might skip planning, forget tests, or write inconsistent PR descriptions. Archon solves this by letting you encode your development process as YAML workflows with defined phases, validation gates, and artifacts.</p>
+        <p>The tool draws parallels to what Dockerfiles did for infrastructure and GitHub Actions for CI/CD — Archon does the same for AI coding workflows. Workflows are composable, mixing deterministic nodes (bash scripts, tests, git operations) with AI nodes (planning, code generation, review). Each workflow run gets its own git worktree, enabling parallel execution without conflicts. It supports CLI, Web UI, Slack, Telegram, and GitHub integrations.</p>
+        <p>Archon is especially appealing to teams that want to leverage AI coding agents at scale while maintaining process consistency. By separating the "what to do" (workflow structure) from the "how to do it" (AI intelligence), teams can fire-and-forget complex development tasks and come back to finished PRs with review comments.</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="card-header">
+        <span class="repo-name"><a href="https://github.com/NousResearch/hermes-agent">NousResearch/hermes-agent</a></span>
+        <div class="stats">
+          <span class="star-count">⭐ 7,671 stars today</span>
+        </div>
+      </div>
+      <div class="language">
+        <span class="lang-dot" style="background: #3572A5;"></span> Python
+      </div>
+      <div class="description">The agent that grows with you</div>
+      <div class="introduction">
+        <p>Hermes Agent is a self-improving AI agent built by Nous Research that features a unique built-in learning loop. Unlike static agents, Hermes creates skills from experience, improves them during use, nudges itself to persist knowledge, searches its own past conversations, and builds a deepening model of who you are across sessions. It's designed to run anywhere — from a $5 VPS to a GPU cluster to serverless infrastructure.</p>
+        <p>The agent supports any LLM provider — Nous Portal, OpenRouter (200+ models), OpenAI, z.ai, Kimi/Moonshot, MiniMax, or custom endpoints — with a simple `hermes model` switch. It features a full TUI with multiline editing, slash-command autocomplete, and streaming tool output. Communication works across Telegram, Discord, Slack, WhatsApp, Signal, and CLI, all from a single gateway process with voice memo transcription.</p>
+        <p>What sets Hermes Agent apart is its closed learning loop: agent-curated memory with periodic nudges, autonomous skill creation after complex tasks, FTS5 session search with LLM summarization, and Honcho dialectic user modeling. The massive 7,671 stars-today surge reflects the community's excitement for an open-source agent that genuinely learns and adapts over time, rather than starting fresh each session.</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="card-header">
+        <span class="repo-name"><a href="https://github.com/rowboatlabs/rowboat">rowboatlabs/rowboat</a></span>
+        <div class="stats">
+          <span class="star-count">⭐ 507 stars today</span>
+        </div>
+      </div>
+      <div class="language">
+        <span class="lang-dot" style="background: #3178c6;"></span> TypeScript
+      </div>
+      <div class="description">Open-source AI coworker, with memory</div>
+      <div class="introduction">
+        <p>Rowboat is an open-source AI coworker that connects to your email and meeting notes, builds a long-lived knowledge graph, and uses that context to help you get real work done — privately, on your machine. You can ask it to build a deck about your next quarter roadmap, prep you for a meeting by pulling past decisions and open questions, or track a person, company, or topic through live notes.</p>
+        <p>The knowledge graph is the core differentiator. It's stored as Markdown, making it fully visualizable and editable. Rowboat can generate PDFs, voice notes, and crisp briefs using context from your graph. It also supports voice memos that automatically capture and update key takeaways. Available for Mac, Windows, and Linux as a desktop application.</p>
+        <p>Rowboat is trending as professionals look for AI tools that go beyond chat — tools that build persistent context over time and can act on accumulated knowledge rather than starting from scratch every conversation. Its privacy-first, local-first approach makes it particularly appealing for those who want AI assistance without sending sensitive work data to the cloud.</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="card-header">
+        <span class="repo-name"><a href="https://github.com/multica-ai/multica">multica-ai/multica</a></span>
+        <div class="stats">
+          <span class="star-count">⭐ 1,506 stars today</span>
+        </div>
+      </div>
+      <div class="language">
+        <span class="lang-dot" style="background: #3178c6;"></span> TypeScript
+      </div>
+      <div class="description">The open-source managed agents platform. Turn coding agents into real teammates that work, learn, and grow.</div>
+      <div class="introduction">
+        <p>Multica is an open-source managed agents platform that turns AI coding agents into real teammates. Instead of copy-pasting prompts and babysitting runs, you assign issues to an agent like you'd assign work to a colleague — they pick up the work, write code, report blockers, and update statuses autonomously. Agents have profiles, show up on the board, post comments, create issues, and participate in conversations.</p>
+        <p>The platform manages the full agent lifecycle: from task assignment to execution monitoring to skill reuse. Every solution becomes a reusable skill for the whole team — deployments, migrations, code reviews all compound capabilities over time. It provides unified runtimes with one dashboard for local daemons and cloud runtimes, auto-detection of available CLIs, and real-time monitoring. It works with Claude Code, Codex, OpenClaw, and OpenCode.</p>
+        <p>Multica's "your next 10 hires won't be human" tagline captures the vision of human + AI teams working side by side. Its vendor-neutral, self-hosted design makes it attractive for organizations wanting to scale their development capacity through managed AI agents without being locked into a single provider.</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="card-header">
+        <span class="repo-name"><a href="https://github.com/forrestchang/andrej-karpathy-skills">forrestchang/andrej-karpathy-skills</a></span>
+        <div class="stats">
+          <span class="star-count">⭐ 1,450 stars today</span>
+        </div>
+      </div>
+      <div class="language">
+        <span class="lang-dot" style="background: #e34c26;"></span> Markdown
+      </div>
+      <div class="description">A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations.</div>
+      <div class="introduction">
+        <p>This project distills Andrej Karpathy's observations about LLM coding pitfalls into a single CLAUDE.md configuration file that dramatically improves Claude Code's behavior. Karpathy noted that AI models "make wrong assumptions on your behalf," "overcomplicate code and APIs," and "change/remove comments and code they don't understand as side effects." This project addresses all three issues through four clear principles.</p>
+        <p>The four principles are: Think Before Coding (surface assumptions and tradeoffs instead of guessing), Simplicity First (minimum code that solves the problem with nothing speculative), Surgical Changes (touch only what you must, clean up only your own mess), and Goal-Driven Execution (leverage tests-first and verifiable success criteria). Each principle directly maps to specific LLM failure modes.</p>
+        <p>The project is trending because it offers an immediately actionable improvement for anyone using Claude Code. Drop a single file into your project, and your AI coding assistant becomes more thoughtful, less bloated, and more respectful of existing code — addressing the exact frustrations that experienced developers have with AI coding tools.</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="card-header">
+        <span class="repo-name"><a href="https://github.com/shiyu-coder/Kronos">shiyu-coder/Kronos</a></span>
+        <div class="stats">
+          <span class="star-count">⭐ 601 stars today</span>
+        </div>
+      </div>
+      <div class="language">
+        <span class="lang-dot" style="background: #3572A5;"></span> Python
+      </div>
+      <div class="description">Kronos: A Foundation Model for the Language of Financial Markets</div>
+      <div class="introduction">
+        <p>Kronos is the first open-source foundation model specifically designed for financial candlestick (K-line) data, trained on data from over 45 global exchanges. Accepted by AAAI 2026, it represents a novel approach to financial time-series modeling by treating market data as a "language" that can be learned through pre-training, similar to how LLMs learn natural language.</p>
+        <p>The model uses a two-stage framework: a specialized tokenizer first quantizes continuous, multi-dimensional K-line data (OHLCV — Open, High, Low, Close, Volume) into hierarchical discrete tokens, and then a large autoregressive Transformer is pre-trained on these tokens. This enables Kronos to serve as a unified model for diverse quantitative tasks including prediction, pattern recognition, and anomaly detection across markets.</p>
+        <p>Kronos is trending in the intersection of AI and finance — it provides researchers and quant developers with a pre-trained foundation model they can fine-tune for their own financial tasks, rather than training from scratch. The availability of fine-tuning scripts and a live demo makes it accessible for experimentation and adaptation.</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="card-header">
+        <span class="repo-name"><a href="https://github.com/HKUDS/DeepTutor">HKUDS/DeepTutor</a></span>
+        <div class="stats">
+          <span class="star-count">⭐ 1,424 stars today</span>
+        </div>
+      </div>
+      <div class="language">
+        <span class="lang-dot" style="background: #3572A5;"></span> Python
+      </div>
+      <div class="description">"DeepTutor: Agent-Native Personalized Learning Assistant"</div>
+      <div class="introduction">
+        <p>DeepTutor is an agent-native personalized learning assistant developed by HKU's Data Science Lab. Recently released as v1.0.0, it features a ground-up architecture rewrite with a two-layer plugin model (Tools + Capabilities), CLI and SDK entry points, TutorBot multi-channel bot agent, Co-Writer, Guided Learning, and persistent memory. The project has rapidly gained traction, reaching 10k stars in just 39 days.</p>
+        <p>The platform supports flexible RAG pipelines for document processing, session persistence, incremental document upload, and a sophisticated quiz generation system. Its latest releases add visualization capabilities with Chart.js/SVG rendering, o4-mini model support, multi-language support, and advanced features like Math Animator for interactive mathematical explanations. It integrates with both OpenAI and Anthropic SDKs natively.</p>
+        <p>DeepTutor fills a critical gap in AI-powered education by going beyond simple question-answering. It acts as a true tutor that understands your learning context, adapts to your pace, generates quizzes, creates visual explanations, and maintains memory across sessions. Its open-source, self-hostable nature makes it attractive for educational institutions and individual learners alike.</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="card-header">
+        <span class="repo-name"><a href="https://github.com/opendataloader-project/opendataloader-pdf">opendataloader-project/opendataloader-pdf</a></span>
+        <div class="stats">
+          <span class="star-count">⭐ 1,306 stars today</span>
+        </div>
+      </div>
+      <div class="language">
+        <span class="lang-dot" style="background: #b07219;"></span> Java
+      </div>
+      <div class="description">PDF Parser for AI-ready data. Automate PDF accessibility. Open-source.</div>
+      <div class="introduction">
+        <p>OpenDataLoader PDF is a high-accuracy PDF parser designed to extract AI-ready data from PDF documents. It ranks #1 in benchmarks with a 0.907 overall score and 0.928 table accuracy across 200 real-world PDFs including multi-column layouts and scientific papers. It outputs structured Markdown for chunking, JSON with bounding boxes for source citations, and HTML — making it ideal for RAG (Retrieval-Augmented Generation) pipelines.</p>
+        <p>The parser operates in two modes: a deterministic local mode for standard PDFs and an AI hybrid mode for complex pages. The hybrid mode handles scanned PDFs with built-in OCR supporting 80+ languages, complex and borderless tables, LaTeX formulas, and AI-generated descriptions for images and charts. SDKs are available for Python, Node.js, and Java, with LangChain integration for seamless incorporation into AI workflows.</p>
+        <p>As RAG systems become the standard approach for grounding LLMs in domain-specific knowledge, reliable PDF parsing is a critical bottleneck. OpenDataLoader PDF addresses this with best-in-class accuracy, multi-format output, and cross-language SDK support, making it a go-to tool for developers building document-intelligence applications.</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="card-header">
+        <span class="repo-name"><a href="https://github.com/obra/superpowers">obra/superpowers</a></span>
+        <div class="stats">
+          <span class="star-count">⭐ 2,150 stars today</span>
+        </div>
+      </div>
+      <div class="language">
+        <span class="lang-dot" style="background: #89e051;"></span> Shell
+      </div>
+      <div class="description">An agentic skills framework &amp; software development methodology that works.</div>
+      <div class="introduction">
+        <p>Superpowers is a complete software development workflow framework for AI coding agents, built on composable "skills" that automatically activate when your agent sees you're building something. Instead of jumping straight into writing code, the agent steps back to understand what you're really trying to do, teases out a specification through conversation, and presents it in digestible chunks for your approval.</p>
+        <p>Once the design is approved, the agent creates an implementation plan clear enough for "an enthusiastic junior engineer with poor taste, no judgement, no project context, and an aversion to testing." It then launches a subagent-driven development process — working through each task, inspecting and reviewing work, and continuing forward. The framework emphasizes true red/green TDD, YAGNI, and DRY principles, enabling Claude to work autonomously for hours without deviating from the plan.</p>
+        <p>Available via Claude Code's official plugin marketplace, Cursor, Codex, and OpenCode, Superpowers requires no special setup — the skills trigger automatically. Its 2,150 stars-today surge reflects the developer community's hunger for structured, reliable AI-assisted development workflows that go beyond ad-hoc prompting.</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="card-header">
+        <span class="repo-name"><a href="https://github.com/jqlang/jq">jqlang/jq</a></span>
+        <div class="stats">
+          <span class="star-count">⭐ 75 stars today</span>
+        </div>
+      </div>
+      <div class="language">
+        <span class="lang-dot" style="background: #555555;"></span> C
+      </div>
+      <div class="description">Command-line JSON processor</div>
+      <div class="introduction">
+        <p>jq is a legendary lightweight and flexible command-line JSON processor, often described as "sed, awk, and grep for JSON data." Written in portable C with zero runtime dependencies, it allows you to easily slice, filter, map, and transform structured data directly from the command line. It's one of the most essential tools in any developer's or sysadmin's toolkit.</p>
+        <p>The tool features a powerful expression language that supports piping, filtering, mapping, and complex transformations. It's available as prebuilt binaries for all major platforms, as a Docker image, or can be built from source. The project also offers an online playground at play.jqlang.org for experimentation without installation.</p>
+        <p>As a perennial presence on trending lists, jq continues to gain stars as new developers discover it and as JSON remains the dominant data interchange format. Its zero-dependency design, cross-platform support, and expressive query language make it indispensable for working with APIs, configuration files, and data pipelines.</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="card-header">
+        <span class="repo-name"><a href="https://github.com/shanraisshan/claude-code-best-practice">shanraisshan/claude-code-best-practice</a></span>
+        <div class="stats">
+          <span class="star-count">⭐ 1,251 stars today</span>
+        </div>
+      </div>
+      <div class="language">
+        <span class="lang-dot" style="background: #e34c26;"></span> HTML
+      </div>
+      <div class="description">practice made claude perfect</div>
+      <div class="introduction">
+        <p>Claude Code Best Practice is a comprehensive guide and implementation resource for transitioning "from vibe coding to agentic engineering" with Claude Code. The repository provides best practices, implemented examples, and orchestration workflows that help developers get the most out of Claude's coding capabilities. It covers agents, commands, and skills — the three pillars of effective Claude Code usage.</p>
+        <p>The project includes practical implementation patterns for orchestration workflows, showing how to structure multi-step development tasks with Claude Code. It draws from community wisdom and incorporates tips from Boris Cherny and other practitioners who have refined their approaches through extensive real-world usage of AI coding tools.</p>
+        <p>With 1,251 stars today, this repo is trending as the Claude Code community rapidly grows and developers seek proven methodologies for AI-assisted development. The "practice makes claude perfect" tagline captures its philosophy: better outcomes come not from better models, but from better practices and structured approaches to working with AI coding agents.</p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>Generated by GitHub Copilot CLI • <a href="../index.html">View all reports</a></p>
+    </div>
+  </div>
+</body>
+</html>
