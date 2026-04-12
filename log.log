@@ -141,3 +141,102 @@ The index.html and seen_repos.json already had today's data from a prior run. Th
   └ 10 lines...
 
 [2026-04-11 15:30:17] Done.
+[2026-04-12 08:00:01] Starting GitHub Trending report generation...
+Error: Authentication token found but could not be validated.
+
+  Failed to fetch OAuth user login: TypeError: fetch failed
+
+Your token may still be valid. Check your network connection and try again.
+
+To authenticate, you can use any of the following methods:
+  • Start 'copilot' and run the '/login' command
+  • Set the COPILOT_GITHUB_TOKEN, GH_TOKEN, or GITHUB_TOKEN environment variable
+  • Run 'gh auth login' to authenticate with the GitHub CLI
+[2026-04-12 12:53:53] Starting GitHub Trending report generation...
+● Read seen repos JSON (shell)
+  │ cat data/seen_repos.json 2>/dev/null || echo "{}"
+  └ 15 lines...
+
+● Fetching web content https://github.com/trending · url: "https://github.com/trending", raw: true,…
+  └ Here is the raw content:
+
+I need to fetch more of the trending page to get the actual repository listings.
+
+● Fetching web content https://github.com/trending · url: "https://github.com/trending", raw: true,…
+  └ Here is the raw content:
+
+The page HTML is very large. Let me skip to where the trending repo articles are.
+
+● Fetching web content https://github.com/trending · max_length: 20000, raw: true, start_index: 400…
+  └ Here is the raw content:
+
+Still in navigation. Let me skip much further ahead to get the actual article content.
+
+● Fetching web content https://github.com/trending · max_length: 20000, raw: true, start_index: 800…
+  └ Here is the raw content:
+
+Let me try fetching the page as markdown which will be much smaller, and also try a much higher offset.
+
+● Fetching web content https://github.com/trending · max_length: 20000, raw: false, url: "https://g…
+  └ Contents of https://github.com/trending:
+
+The trending page content appears to load dynamically. Let me try fetching the raw HTML at even higher offsets to find the article elements.
+
+● Fetching web content https://github.com/trending · max_length: 20000, raw: true, start_index: 100…
+  └ Here is the raw content:
+
+The page is huge with SVG templates. Let me use curl + Python to efficiently parse it.
+
+● Parse trending repos with curl + Python (shell)
+  │ curl -sL 'https://github.com/trending' | python3 -c "
+  │ import sys, re
+  │ html = sys.stdin.read()
+  │ # Find all article elements with Box-row class
+  │ articles = re.findall(r'<article class=\"Box-row\">(.*?)</article>', html, re.DOTALL)…
+  └ 92 lines...
+
+Found 13 trending repos. 3 are new (TapXWorld/ChinaTextbook, OpenBMB/VoxCPM, alexpate/awesome-design-systems). Let me fetch their details.
+
+● Fetching web content https://github.com/TapXWorld/ChinaTextbook · max_length: 15000, url: "https:…
+  └ Contents of https://github.com/TapXWorld/ChinaTextbook:
+
+● Fetching web content https://github.com/alexpate/awesome-design-systems · max_length: 15000, url:…
+  └ Contents of https://github.com/alexpate/awesome-design-systems:
+
+● Fetching web content https://github.com/OpenBMB/VoxCPM · max_length: 15000, url: "https://github.…
+  └ Contents of https://github.com/OpenBMB/VoxCPM:
+
+I have enough context. Now let me check existing reports and generate the report.
+
+● Check existing reports and style (shell)
+  │ ls reports/ 2>/dev/null && cat style.css | head -5
+  └ 7 lines...
+
+Good, there's one existing report. Let me create the report for today (2026-04-12) with the 3 new repos.
+
+● Create 2026-04-12.html +134
+  └ reports/2026-04-12.html
+
+Now let me check the existing report to get the project count for index.html, then update index.html and seen_repos.json.
+
+● Count projects in existing report (shell)
+  │ grep -o 'project-card' reports/2026-04-11.html | wc -l
+  └ 2 lines...
+
+● Read index.html
+  └ 50 lines read
+
+● Edit index.html +16 -16
+
+Now update seen_repos.json with the 3 new repos:
+
+● Update seen_repos.json (shell)
+  │ cd /mnt/disk1/zy/github_trend && python3 -c "
+  │ import json
+  │ with open('data/seen_repos.json', 'r') as f:
+  │ data = json.load(f)
+  │ data['TapXWorld/ChinaTextbook'] = '2026-04-12'…
+  └ 8 lines...
+
+Now commit and push:
+
