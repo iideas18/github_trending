@@ -240,3 +240,20 @@ Now update seen_repos.json with the 3 new repos:
 
 Now commit and push:
 
+● Stage changes and check status (shell)
+  │ cd /mnt/disk1/zy/github_trend && git add -A && git --no-pager status
+  └ 10 lines...
+
+● Commit and push changes (shell)
+  │ cd /mnt/disk1/zy/github_trend && git commit -m "📊 Daily trending report 2026-04-12
+  │
+  │ Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>" && git push origin main
+  │ 2>&1
+  └ 13 lines...
+
+
+Changes   +150 -16
+Requests  3 Premium (3m 39s)
+Tokens    ↑ 1.3m • ↓ 8.2k • 1.2m (cached)
+[2026-04-12 12:57:37] Done.
+/mnt/disk1/zy/github_trend/run.sh: line 8: SCRIPT_DIR: unbound variable
