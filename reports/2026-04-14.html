@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub Trending Report — 2026-04-14</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="container">
+    <a href="../index.html" class="back-link">← Back to all reports</a>
+    <div class="header">
+      <h1>GitHub Trending Report</h1>
+      <p class="date">2026-04-14</p>
+      <p class="subtitle">2 new projects discovered</p>
+    </div>
+
+    <div class="stats-bar">
+      <div class="stat">
+        <div class="stat-value green">2</div>
+        <div class="stat-label">New Projects</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value star">1159</div>
+        <div class="stat-label">Total Stars Today</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value accent">2</div>
+        <div class="stat-label">Languages</div>
+      </div>
+    </div>
+
+    <div class="report-layout">
+    <div class="report-main">
+
+    <div class="project-card" id="project-pascalorg-editor">
+      <span class="card-rank">#1</span>
+      <div class="card-header">
+        <span class="repo-name"><a href="https://github.com/pascalorg/editor">pascalorg/editor</a></span>
+        <div class="stats">
+          <span class="star-count">⭐ 769 stars today</span>
+        </div>
+      </div>
+      <div class="language">
+        <span class="lang-dot" style="background: #3178c6;"></span> TypeScript
+      </div>
+      <div class="description">Create and share 3D architectural projects.</div>
+      <div class="introduction">
+        <p>Pascal Editor is an open-source 3D building editor built with React Three Fiber and WebGPU, designed for creating and sharing architectural projects directly in the browser. It provides a full-featured scene editor where users can draw walls, place doors and windows, create floor slabs, define zones, and navigate through multi-level building structures—all rendered in real-time 3D.</p>
+        <p>The project is architected as a Turborepo monorepo with clean separation of concerns: a core package handles node schemas, state management via Zustand, and geometry generation systems; a viewer package manages 3D rendering with React Three Fiber; and the editor app adds interactive tools and UI. Notable technical features include WebGPU rendering, undo/redo support via Zundo, CSG boolean operations for wall cutouts, and a dirty-node system that efficiently updates only changed geometry each frame.</p>
+        <p>This project is likely trending due to the growing interest in browser-based 3D design tools and the maturity of the WebGPU ecosystem. Architects, interior designers, game developers prototyping level layouts, and React/Three.js developers looking for a well-structured reference implementation would all find this project valuable.</p>
+      </div>
+    </div>
+
+    <div class="project-card" id="project-chrislgarry-apollo-11">
+      <span class="card-rank">#2</span>
+      <div class="card-header">
+        <span class="repo-name"><a href="https://github.com/chrislgarry/Apollo-11">chrislgarry/Apollo-11</a></span>
+        <div class="stats">
+          <span class="star-count">⭐ 390 stars today</span>
+        </div>
+      </div>
+      <div class="language">
+        <span class="lang-dot" style="background: #6E4C13;"></span> Assembly
+      </div>
+      <div class="description">Original Apollo 11 Guidance Computer (AGC) source code for the command and lunar modules.</div>
+      <div class="introduction">
+        <p>This repository contains the original source code for the Apollo 11 Guidance Computer (AGC), which navigated humanity’s first Moon landing in 1969. It includes the complete programs for both the Command Module (Comanche055) and the Lunar Module (Luminary099), digitized from hardcopy printouts held at the MIT Museum in collaboration with the Virtual AGC project.</p>
+        <p>The code is written in AGC Assembly language and represents one of the most historically significant software projects ever created. It was developed at the MIT Instrumentation Laboratory under the leadership of Margaret Hamilton, whose team pioneered many concepts in software engineering. The repository faithfully preserves the original assembly listings, including the famous programmer comments and annotations from 1969.</p>
+        <p>The Apollo 11 source code periodically resurfaces on trending lists as new audiences discover this remarkable piece of computing history. It appeals to software engineers curious about the origins of mission-critical systems, space enthusiasts, historians of technology, and educators teaching computer science. With over 57,000 stars, it remains one of the most celebrated open-source repositories on GitHub.</p>
+      </div>
+      <div class="topics">
+        <span class="tag">apollo</span>
+        <span class="tag">nasa</span>
+        <span class="tag">hacktoberfest</span>
+        <span class="tag">agc</span>
+      </div>
+    </div>
+
+    </div>
+
+    <nav class="sidebar-toc" id="sidebar-toc">
+      <div class="toc-title">Index</div>
+      <div class="toc-list">
+        <a href="#project-pascalorg-editor" class="toc-item"><span class="toc-rank">#1</span>editor</a>
+        <a href="#project-chrislgarry-apollo-11" class="toc-item"><span class="toc-rank">#2</span>Apollo-11</a>
+      </div>
+    </nav>
+    </div>
+
+    <div class="footer">
+      <p>Generated by GitHub Copilot CLI</p>
+      <div class="footer-links">
+        <a href="../index.html">📋 All Reports</a>
+        <a href="https://github.com/trending">📈 GitHub Trending</a>
+        <a href="https://github.com/Yan22022/github_trend">⭐ Source</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-top" onclick="window.scrollTo({top:0})" title="Scroll to top">↑</div>
+  <script>
+    const btn = document.querySelector('.scroll-top');
+    const tocItems = document.querySelectorAll('.toc-item');
+    const cards = document.querySelectorAll('.project-card');
+    window.addEventListener('scroll', () => {
+      btn.classList.toggle('visible', window.scrollY > 400);
+      let activeId = '';
+      cards.forEach(card => {
+        if (card.getBoundingClientRect().top <= 120) activeId = card.id;
+      });
+      tocItems.forEach(item => {
+        item.classList.toggle('active', item.getAttribute('href') === '#' + activeId);
+      });
+    });
+  </script>
+</body>
+</html>
