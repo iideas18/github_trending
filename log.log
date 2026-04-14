@@ -257,3 +257,14 @@ Requests  3 Premium (3m 39s)
 Tokens    ↑ 1.3m • ↓ 8.2k • 1.2m (cached)
 [2026-04-12 12:57:37] Done.
 /mnt/disk1/zy/github_trend/run.sh: line 8: SCRIPT_DIR: unbound variable
+[2026-04-14 08:00:01] Starting GitHub Trending reposrt generation...
+Error: Authentication token found but could not be validated.
+
+  Failed to fetch OAuth user login: TypeError: fetch failed
+
+Your token may still be valid. Check your network connection and try again.
+
+To authenticate, you can use any of the following methods:
+  • Start 'copilot' and run the '/login' command
+  • Set the COPILOT_GITHUB_TOKEN, GH_TOKEN, or GITHUB_TOKEN environment variable
+  • Run 'gh auth login' to authenticate with the GitHub CLI

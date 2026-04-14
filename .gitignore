@@ -1,2 +1,4 @@
-# Ignore cron log
-cron.log
+# Ignore log files
+*.log
+.generation-complete
+.vscode
