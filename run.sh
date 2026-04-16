@@ -8,6 +8,13 @@ set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]:-$0}")" && pwd)"
 cd "$SCRIPT_DIR"
 
+# Only set corporate proxy when explicitly opted in
+if [ "${USE_CORP_PROXY:-}" = "1" ]; then
+  export http_proxy="${http_proxy:-http://proxy.ims.intel.com:911}"
+  export https_proxy="${https_proxy:-http://proxy.ims.intel.com:911}"
+  export no_proxy="${no_proxy:-localhost,*.intel.com,127.0.0.1,intel.com}"
+fi
+
 # --- Preflight checks ---
 if ! command -v copilot >/dev/null 2>&1; then
   echo "[$(date '+%Y-%m-%d %H:%M:%S')] ERROR: copilot CLI not found on PATH" >&2
