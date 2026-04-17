@@ -29,5 +29,11 @@
   "lsdefine/GenericAgent": "2026-04-16",
   "public-apis/public-apis": "2026-04-16",
   "google/magika": "2026-04-16",
-  "Donchitos/Claude-Code-Game-Studios": "2026-04-16"
+  "Donchitos/Claude-Code-Game-Studios": "2026-04-16",
+  "openai/openai-agents-python": "2026-04-17",
+  "steipete/wacli": "2026-04-17",
+  "topoteretes/cognee": "2026-04-17",
+  "EvoMap/evolver": "2026-04-17",
+  "SimoneAvogadro/android-reverse-engineering-skill": "2026-04-17",
+  "BasedHardware/omi": "2026-04-17"
 }
