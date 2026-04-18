@@ -35,5 +35,10 @@
   "topoteretes/cognee": "2026-04-17",
   "EvoMap/evolver": "2026-04-17",
   "SimoneAvogadro/android-reverse-engineering-skill": "2026-04-17",
-  "BasedHardware/omi": "2026-04-17"
+  "BasedHardware/omi": "2026-04-17",
+  "lukilabs/craft-agents-oss": "2026-04-18",
+  "Tracer-Cloud/opensre": "2026-04-18",
+  "z-lab/dflash": "2026-04-18",
+  "pingdotgg/t3code": "2026-04-18",
+  "ChromeDevTools/chrome-devtools-mcp": "2026-04-18"
 }

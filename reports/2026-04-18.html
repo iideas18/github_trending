@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub Trending Report — 2026-04-18</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="container">
+    <a href="../index.html" class="back-link">← Back to all reports</a>
+    <div class="header">
+      <h1>GitHub Trending Report</h1>
+      <p class="date">2026-04-18</p>
+      <p class="subtitle">5 new projects discovered</p>
+    </div>
+
+    <div class="stats-bar">
+      <div class="stat">
+        <div class="stat-value green">5</div>
+        <div class="stat-label">New Projects</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value star">1,004</div>
+        <div class="stat-label">Total Stars Today</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value accent">2</div>
+        <div class="stat-label">Languages</div>
+      </div>
+    </div>
+
+    <div class="report-layout">
+    <div class="report-main">
+
+    <div class="project-card" id="project-lukilabs-craft-agents-oss">
+      <span class="card-rank">#1</span>
+      <div class="card-header">
+        <span class="repo-name"><a href="https://github.com/lukilabs/craft-agents-oss">lukilabs/craft-agents-oss</a></span>
+        <div class="stats">
+          <span class="star-count">⭐ 110 stars today</span>
+        </div>
+      </div>
+      <div class="language">
+        <span class="lang-dot" style="background: #3178c6;"></span> TypeScript
+      </div>
+      <div class="description"></div>
+      <div class="introduction">
+        <p>Craft Agents is an open-source, document-centric desktop GUI for working with AI coding and task agents. Built by the team behind craft.do, it layers an intuitive multitasking interface on top of the Claude Agent SDK and Pi SDK, letting users run parallel agent sessions, connect to arbitrary APIs and services, and share sessions — all without the 'fluff' of traditional CLI-first agent tooling.</p>
+        <p>The project is notable for embracing 'agent-native' software principles: every part of the UI is customizable through prompts, and the team itself reportedly uses Craft Agents to build Craft Agents, effectively dogfooding a no-code-editor workflow. Released under Apache 2.0, it is one of the first polished, open-source GUIs aimed at operators and knowledge workers who want a document-shaped interface to agentic work rather than a terminal.</p>
+        <p>It is trending because it offers a legitimately new shape for consumer-facing agent tooling — one that prioritizes fluid UX, remixability, and integration with existing SDKs — making it appealing to developers exploring post-CLI agent experiences and to teams looking for an opinionated starting point they can fork.</p>
+      </div>
+    </div>
+    <div class="project-card" id="project-tracer-cloud-opensre">
+      <span class="card-rank">#2</span>
+      <div class="card-header">
+        <span class="repo-name"><a href="https://github.com/Tracer-Cloud/opensre">Tracer-Cloud/opensre</a></span>
+        <div class="stats">
+          <span class="star-count">⭐ 184 stars today</span>
+        </div>
+      </div>
+      <div class="language">
+        <span class="lang-dot" style="background: #3572A5;"></span> Python
+      </div>
+      <div class="description">Build your own AI SRE agents. The open source toolkit for the AI era ✨</div>
+      <div class="introduction">
+        <p>OpenSRE is an open-source framework for building AI Site Reliability Engineering agents that can investigate and resolve production incidents on your own infrastructure. It ships with integrations for 60+ observability and incident tools (Datadog, Grafana, Slack, PagerDuty-style alerting, etc.), a workflow definition layer, and — crucially — a training and evaluation environment designed for reinforcement-learning-style improvement of SRE agents.</p>
+        <p>The project frames itself as the 'missing SWE-bench for production incidents': while coding agents have benefited from scalable benchmarks and feedback, production debugging across logs, metrics, traces and runbooks has lacked an equivalent open substrate. OpenSRE provides that substrate, combining tool connectors, agent scaffolding, and an evaluation harness so teams can define their own workflows and measure agent performance over time.</p>
+        <p>It is trending with SRE and platform-engineering audiences who want an auditable, self-hosted alternative to closed AIOps products, and with researchers who need a realistic environment for agentic incident-response experiments. The project is in public alpha, so expect fast iteration on APIs and integrations.</p>
+      </div>
+      <div class="topics">
+<span class="tag">slack</span><span class="tag">grafana</span><span class="tag">site-reliability-engineering</span><span class="tag">alerting</span><span class="tag">datadog</span><span class="tag">sre</span><span class="tag">observability</span><span class="tag">incident-management</span><span class="tag">remediation</span><span class="tag">root-cause-analysis</span>
+      </div>
+    </div>
+    <div class="project-card" id="project-z-lab-dflash">
+      <span class="card-rank">#3</span>
+      <div class="card-header">
+        <span class="repo-name"><a href="https://github.com/z-lab/dflash">z-lab/dflash</a></span>
+        <div class="stats">
+          <span class="star-count">⭐ 287 stars today</span>
+        </div>
+      </div>
+      <div class="language">
+        <span class="lang-dot" style="background: #3572A5;"></span> Python
+      </div>
+      <div class="description">DFlash: Block Diffusion for Flash Speculative Decoding</div>
+      <div class="introduction">
+        <p>DFlash is a research project from Z-Lab that applies block diffusion models to speculative decoding, aiming to speed up large language model inference without sacrificing quality. Instead of relying on a small autoregressive draft model, DFlash drafts multiple tokens in parallel using a lightweight diffusion-based drafter, then verifies them against the target model — giving high acceptance rates and strong throughput gains.</p>
+        <p>The repo ships pretrained DFlash drafters for a wide range of popular open models, including Qwen3 and Qwen3.5 variants (4B through 35B-A3B), Qwen3-Coder, Kimi-K2.5, Llama-3.1-8B-Instruct, and both sizes of gpt-oss (20B and 120B). A training recipe is promised so users can produce custom drafters for their own target LLMs, and an accompanying paper and blog post describe the block-diffusion formulation in detail.</p>
+        <p>It is trending because speculative decoding is one of the highest-leverage inference optimizations for modern LLM serving, and DFlash plugs into an unusually broad list of open models out of the box — making it immediately useful for inference-infrastructure teams and LLM researchers chasing faster tokens-per-second.</p>
+      </div>
+    </div>
+    <div class="project-card" id="project-pingdotgg-t3code">
+      <span class="card-rank">#4</span>
+      <div class="card-header">
+        <span class="repo-name"><a href="https://github.com/pingdotgg/t3code">pingdotgg/t3code</a></span>
+        <div class="stats">
+          <span class="star-count">⭐ 227 stars today</span>
+        </div>
+      </div>
+      <div class="language">
+        <span class="lang-dot" style="background: #3178c6;"></span> TypeScript
+      </div>
+      <div class="description"></div>
+      <div class="introduction">
+        <p>T3 Code, from Theo Browne's ping.gg team, is a minimal web/desktop GUI wrapper around coding agents — currently OpenAI's Codex CLI and Anthropic's Claude Code, with more providers planned. It gives developers a lightweight graphical front-end over the authenticated CLI tools they already have installed, so agent sessions can be driven from a polished UI instead of a terminal.</p>
+        <p>Distribution is deliberately frictionless: you can run it instantly with <code>npx t3</code>, install the desktop build from GitHub Releases, or grab it from winget, Homebrew, or the AUR. The repo is explicitly early-stage — contributions are not yet being accepted — but it already includes an observability guide and clear provider setup instructions for Codex and Claude.</p>
+        <p>It is trending on the strength of the ping.gg / T3 brand and because it scratches a real itch: many developers want a nicer front door to Codex and Claude Code without committing to a heavyweight IDE plugin, and T3 Code positions itself as exactly that minimalist GUI layer.</p>
+      </div>
+    </div>
+    <div class="project-card" id="project-chromedevtools-chrome-devtools-mcp">
+      <span class="card-rank">#5</span>
+      <div class="card-header">
+        <span class="repo-name"><a href="https://github.com/ChromeDevTools/chrome-devtools-mcp">ChromeDevTools/chrome-devtools-mcp</a></span>
+        <div class="stats">
+          <span class="star-count">⭐ 196 stars today</span>
+        </div>
+      </div>
+      <div class="language">
+        <span class="lang-dot" style="background: #3178c6;"></span> TypeScript
+      </div>
+      <div class="description">Chrome DevTools for coding agents</div>
+      <div class="introduction">
+        <p>chrome-devtools-mcp is an official project from the Chrome DevTools team that exposes a live Chrome browser to coding agents — such as Gemini, Claude, Cursor, or GitHub Copilot — through a Model Context Protocol (MCP) server. It effectively gives any MCP-compatible AI assistant the full power of Chrome DevTools: recording performance traces, inspecting network requests, capturing screenshots, reading console messages with source-mapped stack traces, and driving the browser via Puppeteer.</p>
+        <p>Beyond MCP, the repository also provides a standalone CLI for scripted use without an agent, plus detailed design-principles and troubleshooting documentation. Because automation runs against a real Chrome instance, agents can perform reliable end-to-end debugging and performance analysis on actual web apps — closing a long-standing gap where coding agents could reason about source code but not observe runtime behavior in a browser.</p>
+        <p>It is trending because MCP adoption is accelerating across agent frontends and because this is a first-party offering from the DevTools team itself, making it the canonical way to connect AI coding assistants to Chrome for front-end debugging, performance triage, and UI automation workflows.</p>
+      </div>
+      <div class="topics">
+<span class="tag">debugging</span><span class="tag">chrome</span><span class="tag">browser</span><span class="tag">chrome-devtools</span><span class="tag">mcp</span><span class="tag">devtools</span><span class="tag">puppeteer</span><span class="tag">mcp-server</span>
+      </div>
+    </div>
+
+    </div><!-- .report-main -->
+
+    <nav class="sidebar-toc" id="sidebar-toc">
+      <div class="toc-title">Index</div>
+      <div class="toc-list">
+        <a href="#project-lukilabs-craft-agents-oss" class="toc-item"><span class="toc-rank">#1</span>craft-agents-oss</a>
+        <a href="#project-tracer-cloud-opensre" class="toc-item"><span class="toc-rank">#2</span>opensre</a>
+        <a href="#project-z-lab-dflash" class="toc-item"><span class="toc-rank">#3</span>dflash</a>
+        <a href="#project-pingdotgg-t3code" class="toc-item"><span class="toc-rank">#4</span>t3code</a>
+        <a href="#project-chromedevtools-chrome-devtools-mcp" class="toc-item"><span class="toc-rank">#5</span>chrome-devtools-mcp</a>
+      </div>
+    </nav>
+    </div><!-- .report-layout -->
+
+    <div class="footer">
+      <p>Generated by GitHub Copilot CLI</p>
+      <div class="footer-links">
+        <a href="../index.html">📋 All Reports</a>
+        <a href="https://github.com/trending">📈 GitHub Trending</a>
+        <a href="https://github.com/Yan22022/github_trend">⭐ Source</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-top" onclick="window.scrollTo({top:0})" title="Scroll to top">↑</div>
+  <script>
+    const btn = document.querySelector('.scroll-top');
+    const tocItems = document.querySelectorAll('.toc-item');
+    const cards = document.querySelectorAll('.project-card');
+    window.addEventListener('scroll', () => {
+      btn.classList.toggle('visible', window.scrollY > 400);
+      let activeId = '';
+      cards.forEach(card => {
+        if (card.getBoundingClientRect().top <= 120) activeId = card.id;
+      });
+      tocItems.forEach(item => {
+        item.classList.toggle('active', item.getAttribute('href') === '#' + activeId);
+      });
+    });
+  </script>
+</body>
+</html>
