@@ -40,5 +40,14 @@
   "Tracer-Cloud/opensre": "2026-04-18",
   "z-lab/dflash": "2026-04-18",
   "pingdotgg/t3code": "2026-04-18",
-  "ChromeDevTools/chrome-devtools-mcp": "2026-04-18"
+  "ChromeDevTools/chrome-devtools-mcp": "2026-04-18",
+  "Fincept-Corporation/FinceptTerminal": "2026-04-21",
+  "ruvnet/RuView": "2026-04-21",
+  "thunderbird/thunderbolt": "2026-04-21",
+  "paperless-ngx/paperless-ngx": "2026-04-21",
+  "tractorjuice/arc-kit": "2026-04-21",
+  "koala73/worldmonitor": "2026-04-21",
+  "deepseek-ai/DeepGEMM": "2026-04-21",
+  "pi-hole/pi-hole": "2026-04-21",
+  "XTLS/Xray-core": "2026-04-21"
 }
