@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub Trending Report — 2026-04-22</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="container">
+    <a href="../index.html" class="back-link">← Back to all reports</a>
+    <div class="header">
+      <h1>GitHub Trending Report</h1>
+      <p class="date">2026-04-22</p>
+      <p class="subtitle">6 new projects discovered</p>
+    </div>
+
+    <div class="stats-bar">
+      <div class="stat">
+        <div class="stat-value green">6</div>
+        <div class="stat-label">New Projects</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value star">1,259</div>
+        <div class="stat-label">Total Stars Today</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value accent">4</div>
+        <div class="stat-label">Languages</div>
+      </div>
+    </div>
+
+    <div class="report-layout">
+    <div class="report-main">
+
+    <div class="project-card" id="project-zilliztech-claude-context">
+      <span class="card-rank">#1</span>
+      <div class="card-header">
+        <span class="repo-name"><a href="https://github.com/zilliztech/claude-context">zilliztech/claude-context</a></span>
+        <div class="stats">
+          <span class="star-count">⭐ 169 stars today</span>
+        </div>
+      </div>
+      <div class="language"><span class="lang-dot" style="background: #3178c6;"></span> TypeScript</div>
+      <div class="description">Code search MCP for Claude Code. Make entire codebase the context for any coding agent.</div>
+      <div class="introduction">
+        <p>claude-context is a Model Context Protocol (MCP) server from Zilliz that gives AI coding agents like Claude Code, Cursor, and VSCode extensions the ability to perform fast, semantic search across an entire codebase. Instead of forcing agents to scan files one-by-one or rely on naive grep, it indexes a repository into a vector store and exposes a standardized MCP interface so the agent can retrieve just the relevant chunks for any query.</p>
+        <p>The project combines a TypeScript-based MCP server with an embedding-backed code index, and uses techniques like Merkle-tree change detection to keep the index cheap and incremental as files evolve. It is designed to plug into multiple agent runtimes and editors without requiring users to re-upload large codebases for every session.</p>
+        <p>With MCP becoming the de facto way to wire tools into coding agents, claude-context is trending because it targets a real bottleneck: context windows are finite, so teams need retrieval that is code-aware rather than document-generic. It will appeal to developers who want more reliable, whole-repo reasoning from their AI pair programmer without burning tokens on irrelevant files.</p>
+      </div>
+      <div class="topics"><span class="tag">nodejs</span><span class="tag">agent</span><span class="tag">typescript</span><span class="tag">mcp</span><span class="tag">code-search</span><span class="tag">openai</span><span class="tag">vscode-extension</span><span class="tag">code-generation</span><span class="tag">cursor</span><span class="tag">merkle-tree</span></div>
+    </div>
+
+    <div class="project-card" id="project-microsoft-ai-agents-for-beginners">
+      <span class="card-rank">#2</span>
+      <div class="card-header">
+        <span class="repo-name"><a href="https://github.com/microsoft/ai-agents-for-beginners">microsoft/ai-agents-for-beginners</a></span>
+        <div class="stats">
+          <span class="star-count">⭐ 200 stars today</span>
+        </div>
+      </div>
+      <div class="language"><span class="lang-dot" style="background: #DA5B0B;"></span> Jupyter Notebook</div>
+      <div class="description">12 Lessons to Get Started Building AI Agents</div>
+      <div class="introduction">
+        <p>ai-agents-for-beginners is Microsoft&#x27;s open course that walks newcomers through building AI agents in twelve structured lessons. Each lesson pairs a short conceptual explainer with a runnable Jupyter notebook, covering topics from agent design patterns and tool use to agentic RAG, multi-agent collaboration, evaluation, and production considerations.</p>
+        <p>The curriculum is grounded in Microsoft&#x27;s own agent stacks—Semantic Kernel and AutoGen—but the patterns (planner/executor loops, tool calling, memory, retrieval augmentation) are framework-agnostic. Lessons progress from basic single-agent setups to more advanced orchestration scenarios, giving learners a working mental model as well as shippable code snippets.</p>
+        <p>As agentic AI becomes the dominant paradigm for LLM applications, this repo is trending because it lowers the on-ramp with vetted material from a major vendor. It is especially useful for developers, students, and technical managers who want a guided, hands-on path from &#x27;I&#x27;ve used ChatGPT&#x27; to &#x27;I can design and ship my own agents.&#x27;</p>
+      </div>
+      <div class="topics"><span class="tag">ai-agents</span><span class="tag">autogen</span><span class="tag">generative-ai</span><span class="tag">semantic-kernel</span><span class="tag">ai-agents-framework</span><span class="tag">agentic-framework</span><span class="tag">agentic-rag</span><span class="tag">agentic-ai</span></div>
+    </div>
+
+    <div class="project-card" id="project-dayanch96-ytlite">
+      <span class="card-rank">#3</span>
+      <div class="card-header">
+        <span class="repo-name"><a href="https://github.com/dayanch96/YTLite">dayanch96/YTLite</a></span>
+        <div class="stats">
+          <span class="star-count">⭐ 55 stars today</span>
+        </div>
+      </div>
+      <div class="language"><span class="lang-dot" style="background: #999999;"></span> Logos</div>
+      <div class="description">A flexible enhancer for YouTube on iOS</div>
+      <div class="introduction">
+        <p>YTLite is a feature-rich tweak for the YouTube iOS app aimed at jailbroken devices and sideloaders. Built in Logos (the Theos hooking language for iOS tweaks), it patches the official YouTube binary to add quality-of-life improvements the stock app lacks: ad blocking, background playback, picture-in-picture on any tier, custom themes, and fine-grained UI toggles.</p>
+        <p>It also bundles integrations like a video/audio downloader and SponsorBlock support to auto-skip sponsor segments, intros, and self-promotion. Because it is &#x27;flexible,&#x27; almost every tweak can be toggled from an in-app settings panel so users can opt in or out per feature instead of inheriting one maintainer&#x27;s preferences.</p>
+        <p>YTLite is trending now thanks to active releases that keep up with YouTube&#x27;s frequent client updates, which often break older tweaks. It will appeal to iOS power users in the jailbreak/sideload community looking for a maintained, all-in-one YouTube enhancer rather than juggling several smaller tweaks.</p>
+      </div>
+      <div class="topics"><span class="tag">ios</span><span class="tag">downloader</span><span class="tag">youtube</span><span class="tag">jailbreak</span><span class="tag">tweak</span><span class="tag">sponsorblock</span></div>
+    </div>
+
+    <div class="project-card" id="project-hkuds-rag-anything">
+      <span class="card-rank">#4</span>
+      <div class="card-header">
+        <span class="repo-name"><a href="https://github.com/HKUDS/RAG-Anything">HKUDS/RAG-Anything</a></span>
+        <div class="stats">
+          <span class="star-count">⭐ 162 stars today</span>
+        </div>
+      </div>
+      <div class="language"><span class="lang-dot" style="background: #3572A5;"></span> Python</div>
+      <div class="description">&quot;RAG-Anything: All-in-One RAG Framework&quot;</div>
+      <div class="introduction">
+        <p>RAG-Anything, from the HKU Data Science Lab, is an all-in-one retrieval-augmented generation framework that aims to handle essentially any input modality—plain text, PDFs with complex layouts, tables, equations, images, and more—through a single unified pipeline. It pairs document parsing and multi-modal embedding with a retrieval + generation stack so developers don&#x27;t have to stitch together separate toolchains for each file type.</p>
+        <p>The framework ships with configurable parsers, a modality-aware indexer, and a query engine that can route questions across text, visual, and structured content. It is designed to interoperate with popular LLM backends and vector stores, letting teams plug in their own models while still benefiting from the end-to-end orchestration.</p>
+        <p>Multi-modal RAG is one of the hottest areas in applied AI right now, and most production stacks struggle with mixed-content documents. RAG-Anything is trending because it packages recent research advances from the HKUDS group into a practical, Python-first framework, making it attractive to researchers and engineers building knowledge assistants over real-world document collections.</p>
+      </div>
+      <div class="topics"><span class="tag">retrieval-augmented-generation</span><span class="tag">multi-modal-rag</span></div>
+    </div>
+
+    <div class="project-card" id="project-sansan0-trendradar">
+      <span class="card-rank">#5</span>
+      <div class="card-header">
+        <span class="repo-name"><a href="https://github.com/sansan0/TrendRadar">sansan0/TrendRadar</a></span>
+        <div class="stats">
+          <span class="star-count">⭐ 534 stars today</span>
+        </div>
+      </div>
+      <div class="language"><span class="lang-dot" style="background: #3572A5;"></span> Python</div>
+      <div class="description">AI-driven public opinion &amp; trend monitor with multi-platform aggregation, RSS, and smart alerts. 告别信息过载，你的 AI 舆情监控助手与热点筛选工具。</div>
+      <div class="introduction">
+        <p>TrendRadar is a self-hostable, AI-driven trend and public-opinion monitor that aggregates hot topics across many Chinese and international platforms alongside RSS feeds. It lets users define keywords, filter the firehose down to what actually matters to them, and receive summarized briefings instead of having to scroll dozens of apps.</p>
+        <p>Beyond aggregation, it layers AI on top: smart filtering of noisy news, automatic translation, and AI-generated analysis briefings covering sentiment, hot-spot detection, and trend prediction. It also exposes an MCP interface so the same data can be consumed by AI agents in natural-language conversations, and integrates with a wide set of delivery channels—WeChat, Feishu, DingTalk, Telegram, email, ntfy, Bark, Slack—to push alerts straight to a phone.</p>
+        <p>With Docker-based deployment and full local/cloud self-hosting of data, TrendRadar appeals to analysts, journalists, investors, and ops teams who need a private trend radar they control. It is trending as interest grows in personal AI &#x27;information filters&#x27; that cut through social-media overload rather than amplifying it.</p>
+      </div>
+      <div class="topics"><span class="tag">python</span><span class="tag">docker</span><span class="tag">rss</span><span class="tag">mail</span><span class="tag">news</span><span class="tag">ai</span><span class="tag">mcp</span><span class="tag">bark</span><span class="tag">wechat</span><span class="tag">data-analysis</span></div>
+    </div>
+
+    <div class="project-card" id="project-voltagent-awesome-agent-skills">
+      <span class="card-rank">#6</span>
+      <div class="card-header">
+        <span class="repo-name"><a href="https://github.com/VoltAgent/awesome-agent-skills">VoltAgent/awesome-agent-skills</a></span>
+        <div class="stats">
+          <span class="star-count">⭐ 139 stars today</span>
+        </div>
+      </div>
+      <div class="description">A curated collection of 1000+ agent skills from official dev teams and the community, compatible with Claude Code, Codex, Gemini CLI, Cursor, and more.</div>
+      <div class="introduction">
+        <p>awesome-agent-skills is a curated &#x27;awesome list&#x27; from VoltAgent that indexes more than a thousand reusable agent skills—small, packaged capabilities such as &#x27;convert markdown to HTML,&#x27; &#x27;generate a PPTX,&#x27; or &#x27;run a code review&#x27;—contributed by both official dev teams and the community. It focuses specifically on skills that are portable across today&#x27;s leading agent runtimes, including Claude Code, OpenAI Codex CLI, Google&#x27;s Gemini CLI, and Cursor.</p>
+        <p>Each entry typically links to a skill&#x27;s source repository, describes what it does, and notes which agent hosts it works with, making it easier to discover building blocks instead of reinventing them. Because skills follow a common contract across agents, picking one from this list is often a copy-paste away from extending your agent with new abilities.</p>
+        <p>As &#x27;skills&#x27; become a standard packaging unit for agent capabilities, this repo is trending because it solves a very concrete discovery problem: developers know skills exist, but finding high-quality, cross-compatible ones is painful. It&#x27;s a useful starting point for anyone building or customizing coding agents and AI assistants.</p>
+      </div>
+      <div class="topics"><span class="tag">awesome</span><span class="tag">skills</span><span class="tag">awesome-list</span><span class="tag">awesome-lists</span><span class="tag">ai-agents</span><span class="tag">agent-skills</span><span class="tag">claude-code</span><span class="tag">claude-skills</span><span class="tag">claude-code-skills</span><span class="tag">codex-skills</span></div>
+    </div>
+
+    </div><!-- .report-main -->
+
+    <nav class="sidebar-toc" id="sidebar-toc">
+      <div class="toc-title">Index</div>
+      <div class="toc-list">
+        <a href="#project-zilliztech-claude-context" class="toc-item"><span class="toc-rank">#1</span>claude-context</a>
+        <a href="#project-microsoft-ai-agents-for-beginners" class="toc-item"><span class="toc-rank">#2</span>ai-agents-for-beginners</a>
+        <a href="#project-dayanch96-ytlite" class="toc-item"><span class="toc-rank">#3</span>YTLite</a>
+        <a href="#project-hkuds-rag-anything" class="toc-item"><span class="toc-rank">#4</span>RAG-Anything</a>
+        <a href="#project-sansan0-trendradar" class="toc-item"><span class="toc-rank">#5</span>TrendRadar</a>
+        <a href="#project-voltagent-awesome-agent-skills" class="toc-item"><span class="toc-rank">#6</span>awesome-agent-skills</a>
+      </div>
+    </nav>
+    </div><!-- .report-layout -->
+
+    <div class="footer">
+      <p>Generated by GitHub Copilot CLI</p>
+      <div class="footer-links">
+        <a href="../index.html">📋 All Reports</a>
+        <a href="https://github.com/trending">📈 GitHub Trending</a>
+        <a href="https://github.com/Yan22022/github_trend">⭐ Source</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-top" onclick="window.scrollTo({top:0})" title="Scroll to top">↑</div>
+  <script>
+    const btn = document.querySelector('.scroll-top');
+    const tocItems = document.querySelectorAll('.toc-item');
+    const cards = document.querySelectorAll('.project-card');
+    window.addEventListener('scroll', () => {
+      btn.classList.toggle('visible', window.scrollY > 400);
+      let activeId = '';
+      cards.forEach(card => {
+        if (card.getBoundingClientRect().top <= 120) activeId = card.id;
+      });
+      tocItems.forEach(item => {
+        item.classList.toggle('active', item.getAttribute('href') === '#' + activeId);
+      });
+    });
+  </script>
+</body>
+</html>
