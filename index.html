@@ -25,6 +25,19 @@
       </div>
     </div>
 
+    <div class="search-section" aria-labelledby="report-search-label">
+      <label id="report-search-label" class="search-label" for="report-search">Search reports</label>
+      <input
+        id="report-search"
+        class="search-input"
+        type="search"
+        placeholder="Search reports by date or text..."
+        autocomplete="off"
+        spellcheck="false"
+      >
+      <p id="report-search-status" class="search-status" aria-live="polite"></p>
+    </div>
+
     <ul class="report-list">
       <li><a href="reports/2026-04-22.html"><span class="report-date">📋 2026-04-22</span><span class="report-count">6 projects</span><span class="report-arrow">→</span></a></li>
       <li><a href="reports/2026-04-21.html"><span class="report-date">📋 2026-04-21</span><span class="report-count">9 projects</span><span class="report-arrow">→</span></a></li>
@@ -36,6 +49,7 @@
       <li><a href="reports/2026-04-12.html"><span class="report-date">📋 2026-04-12</span><span class="report-count">3 projects</span><span class="report-arrow">→</span></a></li>
       <li><a href="reports/2026-04-11.html"><span class="report-date">📋 2026-04-11</span><span class="report-count">12 projects</span><span class="report-arrow">→</span></a></li>
     </ul>
+    <p id="report-search-empty" class="search-empty" hidden>No reports match your search.</p>
 
     <div class="footer">
       <p>Powered by GitHub Copilot CLI • Updated daily at 8:00 AM CST</p>
@@ -45,5 +59,35 @@
       </div>
     </div>
   </div>
+
+  <script>
+    const searchInput = document.querySelector('#report-search');
+    const reportItems = Array.from(document.querySelectorAll('.report-list li'));
+    const searchStatus = document.querySelector('#report-search-status');
+    const emptyState = document.querySelector('#report-search-empty');
+
+    const updateResults = () => {
+      const query = searchInput.value.trim().toLowerCase();
+      let visibleCount = 0;
+
+      reportItems.forEach((item) => {
+        const matches = item.textContent.toLowerCase().includes(query);
+        item.classList.toggle('is-hidden', !matches);
+        if (matches) visibleCount += 1;
+      });
+
+      if (query === '') {
+        emptyState.hidden = true;
+        searchStatus.textContent = '';
+        return;
+      }
+
+      emptyState.hidden = visibleCount !== 0;
+      searchStatus.textContent =
+        visibleCount === 0 ? 'No results' : `${visibleCount} result${visibleCount === 1 ? '' : 's'}`;
+    };
+
+    searchInput.addEventListener('input', updateResults);
+  </script>
 </body>
 </html>

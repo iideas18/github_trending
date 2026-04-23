@@ -171,6 +171,47 @@ a:hover {
 }
 
 /* Report List (index page) */
+.search-section {
+  margin-bottom: 1.25rem;
+}
+
+.search-label {
+  display: block;
+  margin-bottom: 0.45rem;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-glow);
+}
+
+.search-status {
+  margin-top: 0.5rem;
+  color: var(--text-muted);
+  font-size: 0.82rem;
+  min-height: 1.25rem;
+}
+
+.search-empty {
+  margin-top: 1rem;
+  text-align: center;
+  color: var(--text-secondary);
+}
+
 .report-list {
   list-style: none;
   display: flex;
@@ -234,6 +275,10 @@ a:hover {
 .report-list li:hover .report-arrow {
   color: var(--accent);
   transform: translateX(3px);
+}
+
+.report-list li.is-hidden {
+  display: none;
 }
 
 /* Project Cards (report pages) */
