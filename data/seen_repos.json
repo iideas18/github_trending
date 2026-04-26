@@ -66,5 +66,14 @@
   "microsoft/onnxruntime": "2026-04-23",
   "mksglu/context-mode": "2026-04-23",
   "coreyhaines31/marketingskills": "2026-04-23",
-  "chiphuyen/aie-book": "2026-04-23"
+  "chiphuyen/aie-book": "2026-04-23",
+  "mattpocock/skills": "2026-04-26",
+  "PostHog/posthog": "2026-04-26",
+  "davila7/claude-code-templates": "2026-04-26",
+  "deepseek-ai/DeepEP": "2026-04-26",
+  "RooCodeInc/Roo-Code": "2026-04-26",
+  "codecrafters-io/build-your-own-x": "2026-04-26",
+  "CJackHwang/ds2api": "2026-04-26",
+  "Universal-Commerce-Protocol/ucp": "2026-04-26",
+  "ComposioHQ/awesome-codex-skills": "2026-04-26"
 }
