@@ -106,5 +106,22 @@
   "InsForge/InsForge": "2026-05-07",
   "PriorLabs/TabPFN": "2026-05-07",
   "cheahjs/free-llm-api-resources": "2026-05-07",
-  "LadybirdBrowser/ladybird": "2026-05-07"
+  "LadybirdBrowser/ladybird": "2026-05-07",
+  "tinyhumansai/openhuman": "2026-05-13",
+  "rohitg00/agentmemory": "2026-05-13",
+  "yikart/AiToEarn": "2026-05-13",
+  "influxdata/telegraf": "2026-05-13",
+  "millionco/react-doctor": "2026-05-13",
+  "K-Dense-AI/scientific-agent-skills": "2026-05-13",
+  "danielmiessler/Personal_AI_Infrastructure": "2026-05-13",
+  "supertone-inc/supertonic": "2026-05-13",
+  "CloakHQ/CloakBrowser": "2026-05-13",
+  "Greedeks/GTweak": "2026-05-13",
+  "ArthurBrussee/brush": "2026-05-13",
+  "imthenachoman/How-To-Secure-A-Linux-Server": "2026-05-13",
+  "apernet/hysteria": "2026-05-13",
+  "rasbt/LLMs-from-scratch": "2026-05-13",
+  "ton-blockchain/acton": "2026-05-13",
+  "trycua/cua": "2026-05-13",
+  "github/spec-kit": "2026-05-13"
 }
