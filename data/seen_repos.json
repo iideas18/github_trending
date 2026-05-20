@@ -123,5 +123,16 @@
   "rasbt/LLMs-from-scratch": "2026-05-13",
   "ton-blockchain/acton": "2026-05-13",
   "trycua/cua": "2026-05-13",
-  "github/spec-kit": "2026-05-13"
+  "github/spec-kit": "2026-05-13",
+  "HKUDS/CLI-Anything": "2026-05-20",
+  "Imbad0202/academic-research-skills": "2026-05-20",
+  "anthropics/claude-plugins-official": "2026-05-20",
+  "rtk-ai/rtk": "2026-05-20",
+  "msitarzewski/agency-agents": "2026-05-20",
+  "colbymchenry/codegraph": "2026-05-20",
+  "multica-ai/andrej-karpathy-skills": "2026-05-20",
+  "humanlayer/12-factor-agents": "2026-05-20",
+  "Diolinux/PhotoGIMP": "2026-05-20",
+  "frappe/erpnext": "2026-05-20",
+  "HKUDS/ViMax": "2026-05-20"
 }
