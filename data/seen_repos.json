@@ -150,5 +150,10 @@
   "odoo/odoo": "2026-05-24",
   "NVlabs/LongLive": "2026-05-24",
   "yt-dlp/yt-dlp": "2026-05-24",
-  "janestreet/magic-trace": "2026-05-24"
+  "janestreet/magic-trace": "2026-05-24",
+  "anthropics/knowledge-work-plugins": "2026-05-25",
+  "earendil-works/pi": "2026-05-25",
+  "manaflow-ai/cmux": "2026-05-25",
+  "666ghj/MiroFish": "2026-05-25",
+  "blakeblackshear/frigate": "2026-05-25"
 }
